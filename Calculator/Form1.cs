@@ -258,7 +258,8 @@ namespace Calculator
                 MessageBox.Show("His score is 12!!!");
             else
             {
-                MessageBox.Show("look closely\nyou can change the action sign\ndo operations on negative numbers\n");
+                MessageBox.Show("look closely\nyou can change the action sign\ndo operations on negative numbers\n" +
+                    "keyboard input\nESC clear");
 
             }
         }
@@ -269,8 +270,67 @@ namespace Calculator
 
         private void Key_downs(object sender, KeyEventArgs e)
         {
-            Keyboard_sup.Keyboard_su(e, textBox1);
-            if (e.KeyCode == Keys.Enter)
+            if (e.KeyCode == Keys.D1|| e.KeyCode == Keys.NumPad1)
+            {
+                One_Click(sender, e);
+            }
+            else if (e.KeyCode == Keys.Escape)
+            {
+                C_Click(sender, e);
+            }
+            else if (e.KeyCode == Keys.D2 || e.KeyCode == Keys.NumPad2)
+            {
+                Two_Click(sender, e);
+            }
+            else if (e.KeyCode == Keys.D3 || e.KeyCode == Keys.NumPad3)
+            {
+               Three_Click(sender, e);
+            }
+            else if (e.KeyCode == Keys.D4 || e.KeyCode == Keys.NumPad4)
+            {
+                Four_Click(sender, e);
+            }
+            else if (e.KeyCode == Keys.D5 || e.KeyCode == Keys.NumPad5)
+            {
+                Five_Click(sender, e);
+            }
+            else if (e.KeyCode == Keys.D6 || e.KeyCode == Keys.NumPad6)
+            {
+                Six_Click(sender, e);
+            }
+            else if (e.KeyCode == Keys.D7 || e.KeyCode == Keys.NumPad7)
+            {
+                Seven_Click(sender, e);
+            }
+            else if (e.KeyCode == Keys.D8 || e.KeyCode == Keys.NumPad8)
+            {
+                Eight_Click(sender, e);
+            }
+            else if (e.KeyCode == Keys.D9 || e.KeyCode == Keys.NumPad9)
+            {
+                nine_Click(sender, e);
+            }
+            else if (e.KeyCode == Keys.D0 || e.KeyCode == Keys.NumPad0)
+            {
+                Zero_Click(sender, e);
+            }
+            else if (e.KeyCode == Keys.Add)
+            {
+                PLus_Click(sender, e);
+            }
+            else if (e.KeyCode == Keys.Subtract)
+            {
+                Minus_Click(sender, e);
+            }
+            else if (e.KeyCode == Keys.Multiply)
+            {
+                multiplication_Click(sender, e);
+            }
+            else if (e.KeyCode == Keys.Divide)
+            {
+                division_Click(sender, e);
+            }
+            else if (e.KeyCode == Keys.Enter)
             {
                 is_equal_to_Click(sender, e);
             }

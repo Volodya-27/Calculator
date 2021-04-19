@@ -312,7 +312,7 @@ namespace Calculator
             this.Three.CausesValidation = false;
             this.Three.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.Three.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.Three.Location = new System.Drawing.Point(141, 369);
+            this.Three.Location = new System.Drawing.Point(143, 369);
             this.Three.Name = "Three";
             this.Three.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.Three.Size = new System.Drawing.Size(59, 64);
@@ -425,7 +425,7 @@ namespace Calculator
             this.ChangeZnak.CausesValidation = false;
             this.ChangeZnak.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.ChangeZnak.ForeColor = System.Drawing.Color.White;
-            this.ChangeZnak.Location = new System.Drawing.Point(141, 509);
+            this.ChangeZnak.Location = new System.Drawing.Point(141, 512);
             this.ChangeZnak.Name = "ChangeZnak";
             this.ChangeZnak.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.ChangeZnak.Size = new System.Drawing.Size(127, 64);
