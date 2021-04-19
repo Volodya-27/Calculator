@@ -91,10 +91,9 @@ namespace Calculator
 
         private void Form1_Load(object sender, EventArgs e)
         {
-          
-            
+         
         }
-
+       
         private void CE_Click(object sender, EventArgs e)
         {
             textBox1.Clear();
@@ -261,6 +260,23 @@ namespace Calculator
             {
                 MessageBox.Show("look closely\nyou can change the action sign\ndo operations on negative numbers\n");
 
+            }
+        }
+        private void Seven_Clicks(object sender, KeyEventArgs e)
+        {
+            textBox1.Text += "7";
+        }
+
+        private void Key_downs(object sender, KeyEventArgs e)
+        {
+            Keyboard_sup.Keyboard_su(e, textBox1);
+            if (e.KeyCode == Keys.Enter)
+            {
+                is_equal_to_Click(sender, e);
+            }
+            else if (e.KeyCode == Keys.Decimal)
+            {
+                Dot_Click(sender, e);
             }
         }
 

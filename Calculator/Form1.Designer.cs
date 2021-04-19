@@ -300,6 +300,7 @@ namespace Calculator
             this.Seven.Text = "7";
             this.Seven.UseVisualStyleBackColor = false;
             this.Seven.Click += new System.EventHandler(this.Seven_Click);
+            this.Seven.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Seven_Clicks);
             // 
             // Three
             // 
@@ -521,11 +522,13 @@ namespace Calculator
             this.Controls.Add(this.CE);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
+            this.KeyPreview = true;
             this.MaximumSize = new System.Drawing.Size(293, 627);
             this.MinimumSize = new System.Drawing.Size(293, 627);
             this.Name = "Calculator";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Key_downs);
             this.ResumeLayout(false);
             this.PerformLayout();
 
